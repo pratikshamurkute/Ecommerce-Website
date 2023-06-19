@@ -21,7 +21,7 @@ include "config.php";
             $query = "select pc.*,pi.* from product_details pc, products pi WHERE pc.p_id=pi.p_id and pc.p_id=$p_id;";
             $res = mysqli_query($con, $query);
        
-if(mysqli_num_rows($res) >0 ){
+if(mysqli_num_rows($res) >1 ){
 
     
         while($row1 = $res->fetch_assoc()){
